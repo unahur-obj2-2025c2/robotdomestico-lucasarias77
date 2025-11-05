@@ -41,6 +41,12 @@ public class Robot {
     public Double getBateriaMaxima() {
         return bateriaMaxima;
     }
-    
+
+    public void ejecutar(List<Itarea> listaTareas) {
+        listaTareas.forEach(t -> {
+            t.ejecutar(this);
+            tareas.add(t);
+        });
+    }
     
 }

@@ -11,7 +11,6 @@ public class Ligon extends Comando{
     @Override
     protected void doEjecutar(Robot robot) {
         cocina.encenderLuz();
-        robot.disminuirBateria(consumoDeBateria());
     }
 
     @Override
